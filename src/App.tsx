@@ -40,19 +40,21 @@ function App() {
 
   return (
     <>
-      <h1 className="title">고양이 찾기</h1>
-      <div className="catFrame">
-        <div
-          style={isShowCat ? catStyle : emptyStyle}
-          onClick={onCatClick}
-        ></div>
+      <div style={{display:'grid', alignContent:'center', justifyContent:'center'}}>
+        <h1 className="title">고양이 찾기</h1>
+        <div className="catFrame">
+          <div
+            style={isShowCat ? catStyle : emptyStyle}
+            onClick={onCatClick}
+          ></div>
+        </div>
+        <Popup
+          isOpen={isOpen}
+          setIsOpen={setIsOpen}
+          isShowCat={isShowCat}
+          setShowCat={setShowCat}
+        />
       </div>
-      <Popup
-        isOpen={isOpen}
-        setIsOpen={setIsOpen}
-        isShowCat={isShowCat}
-        setShowCat={setShowCat}
-      />
     </>
   );
 }
