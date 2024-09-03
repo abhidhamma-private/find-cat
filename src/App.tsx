@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import Head from "./assets/head.png";
-import { Popup } from "./popup";
+import { Popup } from "./Popup";
 
 // import { Popup } from './popup'
 
