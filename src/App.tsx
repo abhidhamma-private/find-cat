@@ -13,19 +13,20 @@ function App() {
     cursor: "pointer",
     width: "85px",
     height: "95px",
-    top: "32.5%",
+    top: "19.5%",
     left: "48%",
-    position: "absolute",
+    position: "relative",
+    // backgroundColor:'red'
   };
 
   const catStyle: React.CSSProperties = {
     cursor: "pointer",
     width: "150px",
     height: "120px",
-    top: "32.1%",
-    left: "47.3%",
+    top: "18.7%",
+    left: "42%",
+    position: "relative",
     marginTop: "0px",
-    position: "absolute",
     backgroundImage: `url(${Head})`,
     backgroundRepeat: "no-repeat",
     backgroundSize: "150px",
